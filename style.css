@@ -1,0 +1,8 @@
+ul>li, .social {
+    display: inline;
+    margin: 20px;
+}
+.social {
+    width: 20px;
+    height: 20px;
+}
