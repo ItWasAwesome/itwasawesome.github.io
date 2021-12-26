@@ -6,8 +6,10 @@ ul>li, .social {
     width: 20px;
     height: 20px;
 }
-@media screen and (min-width: 300px) {
-    body, .pict {
-        width: 80%;
-    }
+.pict {
+    width: 100%;
+}
+div>.pict {
+    width: 30%;
+    display: inline;
 }
