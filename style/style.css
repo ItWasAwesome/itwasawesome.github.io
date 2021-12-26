@@ -13,3 +13,18 @@ div>.pict {
     width: 30%;
     display: inline;
 }
+.assortment {
+    background-color: #F1F3F4;
+}
+h1 {
+    font-family: "SF Pro Display";
+    font-size: 65px;
+    font-weight: bold;
+    width: 30%;
+    display: inline-block;
+}
+.tel {
+    display: inline-block;
+    width: 170px;
+    
+}
