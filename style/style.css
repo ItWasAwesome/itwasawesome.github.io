@@ -28,3 +28,18 @@ h1 {
     width: 170px;
     
 }
+nav {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+    margin-left: 20%;
+}
+header>div {
+    width: 60%;
+    display: inline;
+}
+.social {
+    display: inline-block;
+    width: 20%;
+    margin: 10;
+}
