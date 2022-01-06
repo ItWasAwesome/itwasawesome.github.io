@@ -1,45 +1,50 @@
-ul>li, .social {
-    display: inline;
-    margin: 20px;
-}
-.social {
-    width: 20px;
-    height: 20px;
-}
-.pict {
-    width: 100%;
-}
-div>.pict {
-    width: 30%;
-    display: inline;
-}
-.assortment {
-    background-color: #F1F3F4;
+@font-face {
+    font-family: "SF" ;
+    src: url(../font/SFPRODISPLAYREGULAR.OTF);
+   }
+
+body {
+    font: normal 400 16px "SF";
+    color: #072234;
 }
 h1 {
-    font-family: "SF Pro Display";
-    font-size: 65px;
-    font-weight: bold;
-    width: 30%;
-    display: inline-block;
+    font: 700 120px/108px "SF";
 }
-.tel {
-    display: inline-block;
-    width: 170px;
-    
+h2 {
+    font: 700 64px/57.6px "SF";
 }
-nav {
-    width: 30%;
-    display: inline-block;
-    text-align: right;
-    margin-left: 20%;
+h3 {
+    font: 600 36px/50.4px "SF";
 }
-header>div {
-    width: 60%;
-    display: inline;
+h4 {
+    font: 700 24px/33.6px "SF";
 }
-.social {
-    display: inline-block;
-    width: 20%;
-    margin: 10;
+h5,
+nav a {
+    font: 600 16px/22.4px "SF";
+}
+
+nav a:hover,
+h1 span {
+    color: #409DE2;
+}
+
+.mobile a {
+    color: #072234;
+    font-weight: 500;
+    line-height: 22.4px;
+}
+li {
+    list-style: none;
+}
+.largeText {
+    font: 400 1.5em/1.4em  "SF";
+}
+p, div>span {
+    line-height: 22.4px;
+}
+
+div>a {
+    color: #409DE2;
+    font: 500 16px/14.4px "SF";
 }
