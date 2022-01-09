@@ -1,61 +1,61 @@
 @font-face {
-    font-family: "SFThin" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Thin_Italic.woff)format(woff);
     font-weight: 100;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFLight" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Ultralight.woff)format(woff);
     font-weight: 200;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFThin" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Light.woff)format(woff);
     font-weight: 300;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFThin" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Regular.woff)format(woff);
     font-weight: 400;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFMedium" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Medium.woff)format(woff);
     font-weight: 500;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFSemiBold" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Semibold.woff)format(woff);
     font-weight: 600;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFBold" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Bold.woff)format(woff);
     font-weight: 700;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFBlack" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Black.woff)format(woff);
     font-weight: 800;
     font-style: normal;
    }
 @font-face {
-    font-family: "SFHeavy" ;
+    font-family: "SF" ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Heavy.woff)format(woff);
     font-weight: 900;
@@ -63,35 +63,43 @@
    }
 
 body {
-    font: 400 16px "SFThin";
+    font: 400 16px "SF";
     color: #072234;
 }
 
 h1 {
-    font: 700 120px/108px "SFBold";
+    font: 700 120px/108px "SF";
 }
 h2 {
-    font: 700 64px/57.6px "SFBold";
+    font: 700 64px/57.6px "SF";
 }
 h3 {
-    font: 600 36px/50.4px "SFSemiBold";
+    font: 600 36px/50.4px "SF";
 }
 h4 {
-    font: 700 24px/33.6px "SFBold";
+    font: 700 24px/33.6px "SF";
 }
 h5,
 nav a {
-    font: 600 16px/22.4px "SFSemiBold";
+    font: 600 16px/22.4px "SF";
+    text-decoration: none;
 }
+nav a:hover{
+    padding-bottom: 18px;
+    border-bottom: solid 3px #409DE2 ;
 
+}
 nav a:hover,
 h1 span {
     color: #409DE2;
 }
+nav {
+    margin-right: 50px;
+}
 
 .mobile a {
     color: #072234;
-    font: 500 16px/22.4px "SFMedium";
+    font: 500 16px/22.4px "SF";
 }
 
 li {
@@ -99,7 +107,7 @@ li {
 }
 
 .largeText {
-    font: 400 24px/33.6px "SFThin";
+    font: 400 24px/33.6px "SF";
 }
 
 p, div>span {
@@ -108,5 +116,22 @@ p, div>span {
 
 div>a {
     color: #409DE2;
-    font: 500 16px/14.4px "SFMedium";
+    font: 500 16px/14.4px "SF";
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    border-bottom: solid 1px #000;
+}
+header div {
+    display: flex;
+    
+}
+header ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    
 }
