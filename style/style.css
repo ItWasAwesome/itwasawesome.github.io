@@ -1,74 +1,65 @@
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Thin_Italic.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Thin_Italic.woff)format("woff");
     font-weight: 100;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Ultralight.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Ultralight.woff)format("woff");
     font-weight: 200;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Light.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Light.woff)format("woff");
     font-weight: 300;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Regular.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Regular.woff)format("woff");
     font-weight: 400;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Medium.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Medium.woff)format("woff");
     font-weight: 500;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Semibold.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Semibold.woff)format("woff");
     font-weight: 600;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Bold.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Bold.woff)format("woff");
     font-weight: 700;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Black.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Black.woff)format("woff");
     font-weight: 800;
     font-style: normal;
-    color: #072234;
    }
 @font-face {
     font-family: "SF" ;
     font-display: swap;
-    src: url(../font/SF_Pro_Display_Heavy.woff)format(woff);
+    src: url(../font/SF_Pro_Display_Heavy.woff)format("woff");
     font-weight: 900;
     font-style: normal;
-    color: #072234;
    }
 
 body {
