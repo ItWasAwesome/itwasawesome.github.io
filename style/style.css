@@ -64,15 +64,21 @@
 
 body {
     font: 400 16px "SF";
+    max-width: 1720px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 0 100px;
     
 }
 a   {
     text-decoration: none;
+    color: #072234;
 }
 h1 {
     font: 700 120px/108px "SF";
     margin-bottom: 0;
     width: 40vw;
+    margin-top: 30px;
 }
 h2 {
     font: 700 64px/57.6px "SF";
@@ -123,7 +129,8 @@ div>a {
     color: #409DE2;
     font: 500 16px/14.4px "SF";
 }
-header {
+header,
+footer {
     display: flex;
     justify-content: space-between;
     
@@ -144,13 +151,15 @@ header ul {
 }
 /*------------------------------------Section 1*/
 main img {
-    width: 96vw;
+    width: 100%;
     max-width: 1720px;
+    margin-bottom: 210px;
 }
 section p {
     font: 400 16px/22.4px "SF";
-    width: 70vw;
+    
     color: #8C9EAA;
+    margin: 0;
 }
 .mainTop {
     display: flex;
@@ -159,35 +168,33 @@ section p {
     margin-bottom: 50px;
 }
 .mobile {
-    width: 150px;
+    min-width: 190px;
     margin-right: 150px;
 }
-.first {
-    margin-bottom: 150px;
-}
+
 /*------------------------------------Section 2*/
 .section2 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: -150px;
+    margin-bottom: -100px;
 }
 
 .block p {
-    padding: 0 15px;
-    width: 830px;
+    padding: 0;
+    max-width: 1010px;
+    width: 725px;
 }
 .blockImg {
     display: flex;
     align-items: flex-end;
 }
 .photo {
-    width: 33%;
+    width: 30%;
     margin: 0 15px;
+    margin-bottom: 200px;
 }
-.second {
-    margin-bottom: 150px;
-}
+
 
 
 
@@ -197,32 +204,36 @@ section p {
     display: flex;
     background-color: #F1F3F4;
     justify-content: space-between;
-    height: 650px;
+    padding-top: 200px;
+    
 }
-.prev,
-.next {
+.switch {
     width: 30px;
+   
 }
-.block .textAndNav {
+.textAndNav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+    align-items: flex-start;
+    
     
 }
 .textAndNav p {
-    width: 700px;
+    width: 660px;
     padding: 0;
 
 }
 
 .third .block {
     z-index: 2;   
-    width: 850px;
+
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
 }
 
-
-.blockOfPict .pict {
+.gallery .pict {
     width: 350px;
     
 }
@@ -232,10 +243,9 @@ section p {
     font: 700 200px "SF";
     position: absolute;
     text-transform: uppercase;
-    top: 400px;
+    top: 800px;
     left: 50px;
-    -webkit-text-stroke: 1px #072233;
-    opacity: 0.2;
+    -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2);
     
     z-index: 1;
     /*text-shadow: 0 0 1px #072234;*/
@@ -300,6 +310,7 @@ section p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 200px;
 }
 
 .articles p {
@@ -320,4 +331,16 @@ section p {
 .articles a {
     border-bottom: 1px solid #409DE2;
     color: #409DE2;
+}
+/*--------------------------------footer----------*/
+footer {
+    border-bottom: none;
+}
+.contact {
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+}
+.contact :first-child {
+    color: #000;
 }
