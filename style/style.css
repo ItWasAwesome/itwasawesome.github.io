@@ -193,6 +193,7 @@ section p {
 
 /*------------------------------------Section 3*/
 .third {
+    position: relative;
     display: flex;
     background-color: #F1F3F4;
     justify-content: space-between;
@@ -229,12 +230,15 @@ section p {
 
 .backgroundlogo {   
     font: 700 200px "SF";
-    position: relative;
+    position: absolute;
     text-transform: uppercase;
-    top: -280px;
-    left: 10px;
+    top: 400px;
+    left: 50px;
+    -webkit-text-stroke: 1px #072233;
+    opacity: 0.2;
+    
     z-index: 1;
-    text-shadow: 0 0 1px #072234;
+    /*text-shadow: 0 0 1px #072234;*/
     color: #f1f3f4;
     }
 
