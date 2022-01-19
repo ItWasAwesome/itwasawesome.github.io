@@ -74,6 +74,10 @@ a   {
     text-decoration: none;
     color: #072234;
 }
+img {
+    width: 100%;
+    height: auto;
+}
 h1 {
     font: 700 120px/108px "SF";
     margin-bottom: 0;
@@ -107,6 +111,16 @@ h1 span {
 nav {
     margin-right: 50px;
 }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 
 .mobile a {
     color: #072234;
@@ -153,7 +167,7 @@ header ul {
 main img {
     width: 100%;
     max-width: 1720px;
-    margin-bottom: 210px;
+    /* margin-bottom: 210px; */
 }
 section p {
     font: 400 16px/22.4px "SF";
@@ -233,24 +247,21 @@ section p {
     justify-content: space-between;
 }
 
-.gallery .pict {
-    width: 350px;
-    
-}
 
 
-.backgroundlogo {   
+
+.backgroundLogo {   
     font: 700 200px "SF";
     position: absolute;
     text-transform: uppercase;
     top: 800px;
     left: 50px;
-    -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2);
+    /* -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2); */
     
     z-index: 1;
-    /*text-shadow: 0 0 1px #072234;*/
+    text-shadow: 0 0 1px #072234;
     color: #f1f3f4;
-    }
+}
 
 
 
@@ -343,4 +354,23 @@ footer {
 }
 .contact :first-child {
     color: #000;
+}
+.galleryItem {
+    width: 493px;
+    position: relative;
+    margin-right: 32px;
+    overflow: hidden;
+}
+.galleryInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 34, 52, 0.8);
+    left: -100%;
+
+}
+
+.galleryItem:hover .galleryInfo {
+    left: 0;
+    top: 0;
 }
