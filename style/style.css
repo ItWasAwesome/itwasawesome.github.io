@@ -75,6 +75,7 @@ a   {
 img {
     width: 100%;
     height: auto;
+    
 }
 h1 {
     font: 700 120px/108px "SF";
@@ -124,7 +125,8 @@ nav {
     width: 1px;
   }
 
-.mobile a {
+.mobile a,
+.tel a {
     color: #072234;
     font: 500 16px/22.4px "SF";
 }
@@ -167,7 +169,7 @@ header ul {
 }
 /*-------------------------------------------------------------------Section 1*/
 main img {
-    width: 100%;
+   
     max-width: 1720px;
     
 }
@@ -196,11 +198,18 @@ section p {
     margin-bottom: -100px;
     margin-top: 191px;
 }
-
+.section2 h2 {
+    width: 30%;
+}
+.section2 .block {
+    width: 64%;
+    max-width: 1010px;
+}
 .block p {
     padding: 0;
-    max-width: 1010px;
-    width: 730px;
+    
+    
+    
 }
 .blockWrapper {
     display: flex;
@@ -226,19 +235,28 @@ section p {
     position: relative;
     display: flex;
     background-color: #F1F3F4;
+    
+    
     justify-content: space-between;
     padding-top: 200px;
     padding-bottom: 50px;
 }
+.third::before {
+    position: absolute;
+    content: "";
+    top: 150px;
+    left: 0;
+    background-color: #F1F3F4;
+    z-index: -1;
+    background-size: cover;
+    width: 91vw;
+    height: 61.6666%;
+    background-size: 100%;
+    box-shadow: 0 0 0 150px #F1F3F4;
+}
 .third .block {
     width: 770px;
 }
-/* .buttonLeft,
-.buttonRight,
-.switch {
-    width: 30px;
-   
-} */
 
 .buttonLeft {
     background-image: url('../image/buttonLeft.png');
@@ -357,19 +375,6 @@ section p {
     color: #f1f3f4;
 }
 
-/* .backgroundLogo {   
-    font: 700 200px "SF";
-    position: absolute;
-    text-transform: uppercase;
-    top: 800px;
-    left: 50px;
-     -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2); 
-    
-    z-index: 1;
-    text-shadow: 0 0 1px #072234;
-    color: #f1f3f4;
-} */
-
 /*-------------------------------------------------------------------Section 3*/
 
 .news {
@@ -377,6 +382,7 @@ section p {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 200px;
+    margin-top: 200px;
 }
 
 .articles p {
@@ -398,6 +404,18 @@ section p {
     border-bottom: 1px solid #409DE2;
     color: #409DE2;
 }
+.radioLink {
+    content: '';
+    display: block;
+    width: 238px;
+    height: 238px;
+    border: 1px solid #409DE2;
+    border-radius: 119px;
+    text-align: center;
+    margin-top: 200px;
+    color: rgb(255, 0, 0);
+    font: 800 24px/238px 'SF';
+}
 /*-------------------------------------------------------------------footer----------*/
 footer {
     border-bottom: none;
@@ -415,4 +433,46 @@ footer p {
 }
 .contact a:last-child {
     margin-top: 42px;
+}
+
+
+/* ----------------------------------------------popup */
+.popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(44, 44, 44, 0.596);
+    z-index: 5;
+    
+}
+.popupSection {
+    position: relative;
+    background-color: #fff;
+    width: 950px;
+    height: 250px;
+    padding: 50px;
+}
+.popupSection p {
+    font: 400 24px/32px "SF";
+}
+.popupContainerShow { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.closeButton {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 80, 80);
 }
