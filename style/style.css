@@ -64,7 +64,6 @@
 
 body {
     font: 400 16px "SF";
-    max-width: 1720px;
     background-color: #FFFFFF;
     margin: 0 auto;
     padding: 0 100px;
@@ -72,7 +71,6 @@ body {
 }
 a   {
     text-decoration: none;
-    color: #072234;
 }
 img {
     width: 100%;
@@ -97,7 +95,6 @@ h4 {
 h5,
 nav a {
     font: 600 16px/22.4px "SF";
-    text-decoration: none;
 }
 nav a:hover{
     padding-bottom: 18px;
@@ -167,11 +164,11 @@ header ul {
 main img {
     width: 100%;
     max-width: 1720px;
-    /* margin-bottom: 210px; */
+    
 }
+
 section p {
     font: 400 16px/22.4px "SF";
-    
     color: #8C9EAA;
     margin: 0;
 }
@@ -192,21 +189,28 @@ section p {
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: -100px;
+    margin-top: 191px;
 }
 
 .block p {
     padding: 0;
     max-width: 1010px;
-    width: 725px;
+    width: 730px;
 }
-.blockImg {
+.blockWrapper {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+    /* width: 30vw; */
+}
+.blockWrapper:last-child {
+    margin-right: 0;
 }
 .photo {
-    width: 30%;
-    margin: 0 15px;
+    margin-right: 80px;
     margin-bottom: 200px;
+    width: 24.5vw;
+    
 }
 
 
