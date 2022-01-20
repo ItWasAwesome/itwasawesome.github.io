@@ -160,7 +160,7 @@ header ul {
     margin: 0;
     
 }
-/*------------------------------------Section 1*/
+/*-------------------------------------------------------------------Section 1*/
 main img {
     width: 100%;
     max-width: 1720px;
@@ -183,7 +183,7 @@ section p {
     margin-right: 150px;
 }
 
-/*------------------------------------Section 2*/
+/*-------------------------------------------------------------------Section 2*/
 .section2 {
     display: flex;
     justify-content: space-between;
@@ -216,18 +216,55 @@ section p {
 
 
 
-/*------------------------------------Section 3*/
+/*-------------------------------------------------------------------Section 3*/
 .third {
     position: relative;
     display: flex;
     background-color: #F1F3F4;
     justify-content: space-between;
     padding-top: 200px;
-    
+    padding-bottom: 50px;
 }
+.third .block {
+    width: 770px;
+}
+/* .buttonLeft,
+.buttonRight,
 .switch {
     width: 30px;
    
+} */
+
+.buttonLeft {
+    background-image: url('../image/buttonLeft.png');
+}
+.buttonRight {
+    background-image: url('../image/buttonRight.png');
+}
+.buttonLeft,
+.buttonRight {
+    margin-right:  10px;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius: 15px;
+}
+.buttonLeft:hover {
+    background-image: url('../image/buttonHoverLeft.png');
+}
+.buttonRight:hover {
+    background-image: url('../image/buttonHoverRight.png');
+}
+.buttonLeft:focus,
+.buttonRight:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #409ce234;
+    
+}
+.third p {
+    max-width: 690px;
 }
 .textAndNav {
     display: flex;
@@ -239,7 +276,7 @@ section p {
 .textAndNav p {
     width: 660px;
     padding: 0;
-
+    
 }
 
 .third .block {
@@ -249,77 +286,86 @@ section p {
 .gallery {
     display: flex;
     justify-content: space-between;
+    justify-content: stretch;
+    padding-left: 0;
+}
+.galleryItem {
+    width: 493px;
+    position: relative;
+    margin-right: 32px;
+    overflow: hidden;
+}
+.galleryInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 34, 52, 0.8);
+    left: -100%;
+
 }
 
+.galleryItem:hover .galleryInfo {
+    left: 0;
+    top: 0;
+}
+.galleryInfo h3 {
+    font: 600 36p/50.4px 'SF';
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 100px;
+}
+.galleryInfo p {
+    font-weight: 400 ;
+    color: #FFFFFF;
+    width: 139px;
+    text-align: center;
+    margin: 0 auto;
+}
+.readMore {
+    display: block;
+    background-image: url('../image/aRight.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    margin-top: 15px;
+}
 
+.readMore:hover {
+    
+    box-shadow: 0 0 0 10px #409ce223;
+    
+}
+.third::after {
+    content: 'Wideland';
+    font: 700 200px "SF";
+    position: absolute;
+    text-transform: uppercase;
+    top: 500px;
+    left: 50px;
+    -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2);
+    z-index: 1;
+    text-shadow: 0 0 1px #072234;
+    color: #f1f3f4;
+}
 
-
-.backgroundLogo {   
+/* .backgroundLogo {   
     font: 700 200px "SF";
     position: absolute;
     text-transform: uppercase;
     top: 800px;
     left: 50px;
-    /* -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2); */
+     -webkit-text-stroke: 1px rgba(7, 34, 52, 0.2); 
     
     z-index: 1;
     text-shadow: 0 0 1px #072234;
     color: #f1f3f4;
-}
+} */
 
-
-
-
-
-
-
-
-
-
-
-/*.third {
-    background-color: #F1F3F4;
-    margin-bottom: 200px;
-    height: 902px;
-}
-.backgroundlogo {   
-    font: 700 200px/343px "SF";
-    position: relative;
-    text-transform: uppercase;
-    top: -150px;
-    left: 50px;
-    z-index: 1;
-    text-shadow: 0 0 1px #072234;
-    color: #f1f3f4;
-    }
-.prev,
-.next   {
-    width: 30px;
-}
-
-
-.assortment .pict {
-    width: 480px;
-    margin: 10px;
-    z-index: 2;
-}
-.textAndNav {
-    display: flex;
-    justify-content: space-between;
-
-
-}
-.textAndNav p{
-    width: 650px;
-}
-.blockOfPict {
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-}
-*/
-
-/*------------------------------------Section 3*/
+/*-------------------------------------------------------------------Section 3*/
 
 .news {
     display: flex;
@@ -347,9 +393,12 @@ section p {
     border-bottom: 1px solid #409DE2;
     color: #409DE2;
 }
-/*--------------------------------footer----------*/
+/*-------------------------------------------------------------------footer----------*/
 footer {
     border-bottom: none;
+}
+footer p {
+    margin-top: 64px;
 }
 .contact {
     width: 282px;
@@ -359,22 +408,6 @@ footer {
 .contact :first-child {
     color: #000;
 }
-.galleryItem {
-    width: 493px;
-    position: relative;
-    margin-right: 32px;
-    overflow: hidden;
-}
-.galleryInfo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(7, 34, 52, 0.8);
-    left: -100%;
-
-}
-
-.galleryItem:hover .galleryInfo {
-    left: 0;
-    top: 0;
+.contact a:last-child {
+    margin-top: 42px;
 }
