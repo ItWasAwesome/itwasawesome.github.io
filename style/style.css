@@ -79,7 +79,7 @@ img {
 h1 {
     font: 700 120px/108px "SF";
     margin-bottom: 0;
-    width: 40vw;
+    width: 640px;
     margin-top: 30px;
 }
 h2 {
@@ -95,6 +95,11 @@ h4 {
 h5,
 nav a {
     font: 600 16px/22.4px "SF";
+}
+nav a,
+.textAndNav p,
+.block p {
+    color: #072234;
 }
 nav a:hover{
     padding-bottom: 18px;
