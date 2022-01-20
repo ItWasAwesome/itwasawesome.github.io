@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "SF" ;
+    font-display: swap;
+    src: url(../font/SF_Pro_Display_Regular.woff)format("woff");
+    font-weight: 400;
+    font-style: normal;
+   }
+@font-face {
+    font-family: "SF" ;
+    font-display: swap;
+    src: url(../font/SF_Pro_Display_Bold.woff)format("woff");
+    font-weight: 700;
+    font-style: normal;
+   }
+
+body {
+    padding: 0 100px 211px ;
+    max-width: 1720px;
+    margin: 0 auto;
+
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h4 {
+    font: 700 24px/33.6px "SF";
+    margin-bottom: 10px;
+}
+p {
+    font: 400 16px/22.4px "SF";
+    margin-top: 0;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+span {
+    font: 700 144px/126.6px "SF";
+    color: #409DE2;
+}
+.buttonBack {
+    padding: 18px 84px;
+    color: #fff;
+    background-color: #409DE2;
+    text-decoration: none;
+    font: 700 16px/22.4px "SF";
+}
+.main::after {
+    content: "";
+    position: absolute;
+    background: url('../image/404.png') 0 0 no-repeat;
+    top: 150px;
+    height: 746px;
+    width: 100%;
+    max-width: 1720px;
+    background-size: 100%;
+}
