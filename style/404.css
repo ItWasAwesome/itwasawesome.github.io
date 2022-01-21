@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "SF" ;
+    font-family: "SF", sans-serif ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Regular.woff)format("woff");
     font-weight: 400;
     font-style: normal;
    }
 @font-face {
-    font-family: "SF" ;
+    font-family: "SF", sans-serif ;
     font-display: swap;
     src: url(../font/SF_Pro_Display_Bold.woff)format("woff");
     font-weight: 700;
@@ -24,11 +24,11 @@ img {
     height: auto;
 }
 h4 {
-    font: 700 24px/33.6px "SF";
+    font: 700 24px/33.6px "SF", sans-serif;
     margin-bottom: 10px;
 }
 p {
-    font: 400 16px/22.4px "SF";
+    font: 400 16px/22.4px "SF", sans-serif;
     margin-top: 0;
 }
 .main {
